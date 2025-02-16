@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+
+/* Customize the scrollbar width and color */
+*::-webkit-scrollbar {
+  background: #313131;
+  width: 8px;
+  /* Width of the scrollbar */
+}
+
+/* Customize the scrollbar track */
+*::-webkit-scrollbar-track {
+  background: #c8c8c8;
+  /* Track color */
+  border-radius: 20px;
+  /* Track rounded corners */
+}
+
+/* Customize the scrollbar thumb */
+*::-webkit-scrollbar-thumb {
+  background-color: #393939;
+  /* Thumb color */
+  border-radius: 30px;
+  /* Thumb rounded corners */
+  border: 2px solid #ffffff;
+  /* Adds padding around the thumb */
+}
+
+/* Customize the scrollbar thumb on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #005eff;
+  /* Thumb color on hover */
+}
+
+
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0px !important;
+  height: 0px !important;
+  display: none !important;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+  overflow-y: auto !important;
+}
+
+
+.size-neu {
+  border-radius: 6px;
+  background: linear-gradient(145deg, #ff0808, #1b1b1b);
+
+}
+
+
+@layer base {
+  :root {
+    --radius: 0.5rem
+  }
+}
